@@ -1,4 +1,4 @@
-🌐 Get Connect - Static Social Networking UI
+#**🌐 Get Connect - Static Social Networking UI**
 Get Connect is a static social networking user interface built using HTML, CSS, and JavaScript. Designed for a fictional company named XYZ, this project focuses on helping users connect with people who share similar interests, backgrounds, or career goals.
 
 This frontend-only project showcases the design and interaction elements you'd expect in a modern social platform – no backend, just clean UI and basic interactivity.
@@ -28,10 +28,8 @@ Private Messaging – Send messages to friends or other users (UI only).
 
 🛠 Built With
 HTML5
-
 CSS3
-
-Vanilla JavaScript
+JavaScript
 
 ⚠️ Note: This is a static UI project – no database, authentication, or real messaging involved. It’s focused purely on layout, styling, and frontend behavior simulation.
 
