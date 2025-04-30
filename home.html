@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GetConnect - Home</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <h2 class="logo">Get Connect</h2>
+    </div>
+    <div class="navbar-center">
+      <input type="text" class="search-input" placeholder="Search...">
+    </div>
+    <div class="navbar-right">
+      <a href="home.html" class="nav-item active">Home</a>
+      <a href="profile.html" class="nav-item">Profile</a>
+      <a href="messages.html" class="nav-item">Messages</a>
+      <div class="user-menu">
+        <img src="images/user-avatar.jpg" alt="User" class="avatar-small">
+        <div class="dropdown-content">
+          <a href="profile.html">My Profile</a>
+          <a href="index.html" id="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h3>Online Friends</h3>
+        <ul class="friend-list" id="onlineFriends">
+          <!-- Dynamically populated -->
+        </ul>
+      </div>
+    </aside>
+    
+    <div class="feed">
+      <div class="post-composer">
+        <img src="images/user-avatar.jpg" alt="User" class="avatar-small">
+        <div class="composer-input">
+          <textarea placeholder="What's on your mind?" id="postContent"></textarea>
+          <div class="composer-actions">
+            <div class="sharing-options">
+              <select id="shareWith">
+                <option value="all">Share with all friends</option>
+                <option value="select">Share with selected friends</option>
+              </select>
+              <div id="friendSelection" class="hidden">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+            <button class="btn-primary" id="sharePost">Share</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-feed" id="newsFeed">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

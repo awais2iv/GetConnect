@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Connect - Messages</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/messages.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <h2 class="logo">Get Connect</h2>
+    </div>
+    <div class="navbar-center">
+      <input type="text" class="search-input" placeholder="Search...">
+    </div>
+    <div class="navbar-right">
+      <a href="home.html" class="nav-item">Home</a>
+      <a href="profile.html" class="nav-item">Profile</a>
+      <a href="messages.html" class="nav-item active">Messages</a>
+      <div class="user-menu">
+        <img src="images/user-avatar.jpg" alt="User" class="avatar-small">
+        <div class="dropdown-content">
+          <a href="profile.html">My Profile</a>
+          <a href="index.html" id="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="messages-container">
+      <div class="conversations">
+        <div class="conversations-header">
+          <h2>Messages</h2>
+          <button class="btn-icon" id="newMessage">+</button>
+        </div>
+        <div class="conversation-list" id="conversationList">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <div class="message-area">
+        <div class="message-header" id="messageHeader">
+          <div class="message-header-info">
+            <img src="images/user-avatar.jpg" alt="User" class="avatar-small">
+            <span>Select a conversation</span>
+          </div>
+        </div>
+        <div class="message-content" id="messageContent">
+          <!-- Dynamically populated -->
+        </div>
+        <div class="message-input-area">
+          <textarea placeholder="Type a message..." id="messageInput"></textarea>
+          <button class="btn-primary" id="sendMessage">Send</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/messages.js"></script>
+</body>
+</html>

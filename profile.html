@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Connect - Profile</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <h2 class="logo">Get Connect</h2>
+    </div>
+    <div class="navbar-center">
+      <input type="text" class="search-input" placeholder="Search...">
+    </div>
+    <div class="navbar-right">
+      <a href="home.html" class="nav-item">Home</a>
+      <a href="profile.html" class="nav-item active">Profile</a>
+      <a href="messages.html" class="nav-item">Messages</a>
+      <div class="user-menu">
+        <img src="images/user-avatar.jpg" alt="User" class="avatar-small">
+        <div class="dropdown-content">
+          <a href="profile.html">My Profile</a>
+          <a href="index.html" id="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="profile-header">
+      <div class="profile-cover"></div>
+      <div class="profile-info">
+        <img src="images/user-avatar.jpg" alt="User" class="avatar-large">
+        <div class="profile-details">
+          <h1 id="profileName">Muhammad Awais</h1>
+          <p id="profileTagline">Full Stack Web Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-body">
+      <div class="profile-section">
+        <h2>Personal Information</h2>
+        <div class="info-card">
+          <div class="info-item">
+            <span class="info-label">Email:</span>
+            <span class="info-value" id="profileEmail">mohamadawais942@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Location:</span>
+            <span class="info-value" id="profileLocation">Islamabad, Pakistan</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Joined:</span>
+            <span class="info-value" id="profileJoined">March 21, 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <h2>My Friends</h2>
+        <div class="friend-grid" id="friendGrid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
