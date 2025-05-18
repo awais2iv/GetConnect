@@ -1,35 +1,49 @@
-#**🌐 Get Connect - Static Social Networking UI**
-Get Connect is a static social networking user interface built using HTML, CSS, and JavaScript. Designed for a fictional company named XYZ, this project focuses on helping users connect with people who share similar interests, backgrounds, or career goals.
+# 🤝 ConnecFriend - Social Networking UI
 
-This frontend-only project showcases the design and interaction elements you'd expect in a modern social platform – no backend, just clean UI and basic interactivity.
+**ConnecFriend** is a user interface prototype for a modern social networking platform where individuals can connect with friends, view news feeds, exchange messages, and build meaningful online relationships.
 
-💡 Key Features
-Login Page – Simple login screen for existing users (no registration flow).
+---
 
-Profile Page – Displays user info, profile picture, and their friends list.
+## 📌 Project Overview
 
-Home / News Feed – Shows posts from friends:
+A social networking service is an online platform that enables users to build and manage social relationships. **ConnecFriend** is designed to reflect the essential features of a social platform like profile management, friend connections, content sharing, private messaging, and more.
 
-Sorted by most recent login.
+This UI has been designed for a client **XYZ**, to provide a prototype look-and-feel of their upcoming social networking product.
 
-Includes post content, friend's name, photo, and login time.
+---
 
-Like/dislike functionality with count display.
+## 🎯 Features Implemented
 
-Friend System:
+### ✅ Login Page
+- Simple login form for existing users (no registration page required).
+- Username and password input fields with login validation logic (frontend only).
 
-Send friend requests (unless blocked).
+### ✅ Profile Page
+- Displays user's personal information and profile picture.
+- Lists all friends in a clean, scrollable format.
 
-Rate friends as Stupid, Cool, or Trustworthy using icons.
+### ✅ Home Page (News Feed)
+- Shows posts from friends, including:
+  - Friend’s name and profile picture
+  - Time since their last login
+  - News content
 
-Post Sharing – Share updates with all or selected friends.
+- Friends are displayed in **latest-login-first** order.
+- Supports:
+  - 👎 Like/Dislike functionality with count display
+  - 📨 News sharing (to all or selected friends)
+  - ➕ Sending friend requests (unless user is on ignore list)
+  - ⭐ Friend rating: Stupid (1), Cool (2), Trustworthy (3)
 
-Private Messaging – Send messages to friends or other users (UI only).
+### ✅ Messaging System (Frontend)
+- Private message UI allows chatting with both friends and other members.
 
-🛠 Built With
-HTML5
-CSS3
-JavaScript
+---
 
-⚠️ Note: This is a static UI project – no database, authentication, or real messaging involved. It’s focused purely on layout, styling, and frontend behavior simulation.
+## 🧪 How to Run
 
+Simply open `index.html` in your browser to start using the interface.
+
+```bash
+# If using VSCode or similar
+Live Server > index.html
